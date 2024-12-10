@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
-import Application from "components/Application";
+import AppProviders from "components/Providers/AppProviders";
+import MuiMode from "components/MuiMode";
 
 function App() {
   return (
-    <div className="App">
-      <Application />
-    </div>
+    <AppProviders>
+      <div className="App">
+        <MuiMode />
+      </div>
+    </AppProviders>
   );
 }
 
